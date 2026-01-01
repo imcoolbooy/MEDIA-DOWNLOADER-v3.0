@@ -23,6 +23,7 @@ While Using Youtube on your phone tap on share button of any video and select Te
 For Facebook private videos and audios:
 - First save your Facebook cookies using the tool’s option 0.
 - Then use the download option to get videos or audios.
+- You can also download videos and audios from Google, Publish, and other websites.
 
 ### Installation: TOOL
 
