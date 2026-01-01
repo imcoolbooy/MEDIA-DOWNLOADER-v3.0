@@ -1,9 +1,6 @@
 ### A light weight tool to download any kind of Video, Music or shorts from Youtube with 2 clicks on your phone using Termux.
 <hr>
 
-![Coolbooy's Logo](https://i.ibb.co/LXPnSKn5/IMG-20260101-214833.jpg)
-![coolbooy's Logo](https://i.ibb.co/ZzN2y2QC/IMG-20260101-210858.jpg)
-
 MEDIA-DOWNLOADER-v3.0 is a Upgraded version of Termux-COOLBOOY-v2.0"Since Youtube-dl really slow know Termux-COOLBOOY-v2.0 is still downloading things but really slow and IM-MEDIA-DOWNLOADER-v3.0 overcomes that problem. I have added all the previous features of IM-MEDIA-DOWNLOADER-v3.0 as well as added youtube shorts support. So now while watching shorts you can just share any shorts with termux and it will download it at a lightning speed.
 
 
@@ -16,6 +13,16 @@ MEDIA-DOWNLOADER-v3.0 is a Upgraded version of Termux-COOLBOOY-v2.0"Since Youtub
 📝 Telegram group: https://t.me/COOLBOOY550 <br>
 <br>
 <br>
+
+### Basic Idea of Usage: <br>
+
+While Using Youtube on your phone tap on share button of any video and select Termux. Termux will open automatically and now just select the quality of the video.
+
+- After this the video will be downloaded automatically. If you are downloading shorts then you don't have to do 2nd step, just share it and it will be downloaded in one click.
+
+For Facebook private videos and audios:
+- First save your Facebook cookies using the tool’s option 0.
+- Then use the download option to get videos or audios.
 
 ### Installation: TOOL
 
@@ -59,12 +66,8 @@ MEDIA-DOWNLOADER-v3.0 is a Upgraded version of Termux-COOLBOOY-v2.0"Since Youtub
 <br>
 <br>
 
-### Usage:
-
-Basic Idea of Usage: <br>
-[1] While Using Youtube on your phone tap on share button of any video and and select termux. <br>
-[2] Termux will open automatically and now just select the quality of the video.<br>
-- after this the video will be downloaded automatically. if you are downloading shorts then you don't have to do 2nd step, just share it and it will be downloaded in one click.
+![Coolbooy's Logo](https://i.ibb.co/LXPnSKn5/IMG-20260101-214833.jpg)
+![coolbooy's Logo](https://i.ibb.co/Wvpn4fmZ/IMG-20260101-210858.jpg)
 
 ### Features:
 - Download Shorts
