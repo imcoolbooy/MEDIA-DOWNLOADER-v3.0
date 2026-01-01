@@ -1,0 +1,129 @@
+#!/data/data/com.termux/files/usr/bin/zsh
+# 🔰 MEDIA DOWNLOADER v3.0"
+# 𝑬𝑻𝑯𝑰𝑪𝑨𝑳 𝑪𝒀𝑩𝑬𝑹𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀 ™
+# GITHUB: https://github.com/imcoolbooy
+
+BASE_DIR="$HOME/storage/shared/IM-COOL-BOOY/COOLBOOY"
+fpath="$BASE_DIR/%(id)s.%(ext)s"
+COOKIES_DIR="$BASE_DIR"
+fb_cookies="$COOKIES_DIR/cookies.txt"
+
+mkdir -p "$BASE_DIR"
+
+if [[ "$1" == *"shorts"* ]]; then
+    echo "✅ Downloading Shorts video compatible..."
+    yt-dlp --remote-components ejs:github \
+      -f "bestvideo[vcodec^=avc1][height<=1080]+bestaudio[ext=m4a]/best" \
+      --merge-output-format mp4 \
+      -o "$fpath" "$1"
+    exit
+fi
+
+echo -e "\e[031m" " ▄ █   ▄▀▀▀▀▀▄   █ ▄  🔰 MEDIA DOWNLOADER v3.0"
+echo -e "\e[031m" "▄▄▀▄   █─▀─▀─█  ▄▀▄▄  🌏 With Enhanced Speed"
+echo -e "\e[031m" "     ▀▄▒▒▒▒▒▒▒▒▒▄▀    --------------------"
+echo -e "\e[031m" "     █────▀────█       🎉️ Check out my Github"
+echo -e "\e[031m" "     █────▀────█       ✨️ For More info...   "
+echo -e "\e[036m" "╔════════════════════════════════════════════════╗"
+echo -e "\e[032m" "║ ♚ Project Name : 🔰 MEDIA DOWNLOADER v3.0      ║"
+echo -e "\e[032m" "║ ♚ Author : 𓆩𝐈𝐌 𝐂𝐎𝐎𝐋 𝐁𝐎𝐎𝐘 𝓢𝓱𝓪𝓭𝓸𝔀 𝓚𝓲𝓷𝓰 𓆪         ║"
+echo -e "\e[032m" "║ ♚ Github : https://github.com/imcoolbooy       ║"
+echo -e "\e[032m" "║ ♚ 𝗣𝗢𝗪𝗘𝗥 𝗕𝗬 : 𝑬𝑻𝑯𝑰𝑪𝑨𝑳 𝑪𝒀𝑩𝑬𝑹𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀 ™           ║"
+echo -e "\e[036m" "╠════════════════════════════════════════════════╝"
+echo -e "\e[036m" "╠═▶ [𝗦𝗲𝗹𝗲𝗰𝘁 𝗔 𝗙𝗼𝗿𝗺𝗮𝘁]  ➳"
+echo -e "\e[032m" "╠═▶ 0. Facebook Cookies Setup"
+echo -e "\e[032m" "╠═▶ 1. Music Mp3♫"
+echo -e "\e[032m" "╠═▶ 2. Video 360p"
+echo -e "\e[032m" "╠═▶ 3. Video 480p"
+echo -e "\e[032m" "╠═▶ 4. Video 720p"
+echo -e "\e[032m" "╠═▶ 5. Video 1080p"
+echo -e "\e[032m" "╠═▶ 6. Video 2160p"
+echo -e "\e[032m" "╠═▶ 7. Facebook Video 1080p"
+echo -e "\e[032m" "╠═▶ 8. Exit Tool"
+echo -e "\e[032m" "╠═▶ A. About."
+printf "\e[032m ╚═:➤ \e[0m "
+read choice
+
+
+case "$choice" in
+0)
+    echo -e "\e[036m🌏 Facebook Cookies Setup.\e[0m"
+    echo -e "\e[033m🔄 Paste FULL cookies (Netscape format) below.\e[0m"
+    echo -e "\e[036m💾 CTRL+D to save.\e[0m"
+    echo "--------------------------------"
+    cat > "$fb_cookies"
+    if [ -s "$fb_cookies" ]; then
+        echo -e "\e[032m✅ Cookies saved successfully\e[0m"
+        echo -e "\e[032m💾 Location: /storage/shared/IM-COOL-BOOY/COOLBOOY\e[0m"
+    else
+        echo -e "\e[031m❌ Cookies save failed.!\e[0m"
+    fi
+    ;;
+
+    1)
+        echo "🔰 Option 1 selected."
+        echo "✅ Downloading audio in best quality. (m4a)"
+        yt-dlp -f 'bestaudio[ext=m4a]/bestaudio' -o "$fpath" "$1"
+        ;;
+
+    2)
+        echo "🔰 Option 2 selected."
+        echo "✅ Downloading video with best quality up to 360p"
+        yt-dlp -f 'bestvideo[height<=360]+bestaudio/best[height<=360]/best' -o "$fpath" "$1"
+        ;;
+
+    3)
+        echo "🔰 Option 3 selected."
+        echo "✅ Downloading video with best quality up to 480p"
+        yt-dlp -f 'bestvideo[height<=480]+bestaudio/best[height<=480]/best' -o "$fpath" "$1"
+        ;;
+
+    4)
+        echo "🔰 Option 4 selected."
+        echo "✅ Downloading video with best quality up to 720p"
+        yt-dlp -f 'bestvideo[height<=720]+bestaudio/best[height<=720]/best' -o "$fpath" "$1"
+        ;;
+
+    5)
+        echo "🔰 Option 5 selected."
+        echo "✅ Downloading video with best quality up to 1080p"
+        yt-dlp -f 'bestvideo[height<=1080]+bestaudio/best[height<=1080]/best' -o "$fpath" "$1"
+        ;;
+
+    6)
+        echo "🔰 Option 6 selected."
+        echo "✅ Downloading video with best quality up to 2160p"
+        yt-dlp -f 'bestvideo[height<=2160]+bestaudio/best[height<=2160]/best' -o "$fpath" "$1"
+        ;;
+
+    7)
+       if [ ! -s "$fb_cookies" ]; then
+        echo -e "\e[031m❌ Cookies not found Use Option 0 first.!\e[0m"
+        exit 1
+
+       fi
+        yt-dlp \
+        --cookies "$fb_cookies" \
+        -f "bestvideo[vcodec^=avc1][height<=1080]+bestaudio[acodec^=mp4a]/best" \
+        --merge-output-format mp4 \
+        -o "$fpath" "$1"
+        ;;
+
+    8)
+        echo "✅ Option 8 selected.!"
+        echo -e "\e[032m✅ Author : 𓆩𝐈𝐌 𝐂𝐎𝐎𝐋 𝐁𝐎𝐎𝐘 𝓢𝓱𝓪𝓭𝓸𝔀 𝓚𝓲𝓷𝓰 𓆪\e[0m"
+        echo -e "\e[032m✅ Github : https://github.com/imcoolbooy\e[0m"
+        echo -e "\e[032m✅ 𝗣𝗢𝗪𝗘𝗥 𝗕𝗬 : 𝑬𝑻𝑯𝑰𝑪𝑨𝑳 𝑪𝒀𝑩𝑬𝑹𝑺𝑬𝑪𝑼𝑹𝑰𝑻𝒀 ™\e[0m"
+        echo -e "\e[031m✅ Exiting...\e[0m"
+        exit 0
+        ;;
+ A|a)
+    echo -e "\e[036m🔰 MEDIA DOWNLOADER v3.0
+\e[032mDownload Google Videos, Music & Facebook content
+\e[036m👨‍💻 Developer: 𓆩𝐈𝐌 𝐂𝐎𝐎𝐋 𝐁𝐎𝐎𝐘 𝓢𝓱𝓪𝓭𝓸𝔀 𝓚𝓲𝓷𝓰 𓆪"
+    ;;
+    *)
+        echo -e "\e[031🔄 mInvalid option. Downloading best available video..!\e[0m"
+        yt-dlp -f best --merge-output-format mp4 -o "$fpath" "$1"
+        ;;
+esac
