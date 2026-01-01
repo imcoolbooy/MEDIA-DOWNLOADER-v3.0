@@ -1,7 +1,7 @@
 ### A light weight tool to download any kind of Video, Music or shorts from Youtube with 2 clicks on your phone using Termux.
 <hr>
 
-![Coolbooy's Logo](https://i.ibb.co/HT8k1sst/IMG-20260101-214833.jpg)
+![Coolbooy's Logo](https://i.ibb.co/YFBCc5bH/IMG-20260101-214833.jpg)
 ![coolbooy's Logo](https://i.ibb.co/ZzN2y2QC/IMG-20260101-210858.jpg)
 
 MEDIA-DOWNLOADER-v3.0 is a Upgraded version of Termux-COOLBOOY-v2.0"Since Youtube-dl really slow know Termux-COOLBOOY-v2.0 is still downloading things but really slow and IM-MEDIA-DOWNLOADER-v3.0 overcomes that problem. I have added all the previous features of IM-MEDIA-DOWNLOADER-v3.0 as well as added youtube shorts support. So now while watching shorts you can just share any shorts with termux and it will download it at a lightning speed.
